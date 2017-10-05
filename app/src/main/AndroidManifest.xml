@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ufmg_leic.meca">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".MenuInicial"></activity>
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Conectar"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".GoogleAPIRequest"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".SubMenuPermanente"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity android:name=".Menu" />
+        <activity android:name=".DisplayTermometro" />
+        <activity android:name=".BeanocularActivity" />
+        <activity android:name=".DisplayPonteiro" />
+        <activity android:name=".DisplaySeteSeg" />
+        <activity
+            android:name=".CalibrarManual"
+            android:label="@string/title_activity_calibrar_manual"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ProfessorTurmas"
+            android:label="@string/title_activity_professor_turmas"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CriarTurma"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".ProfessorExperimentos"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CriaExperimento"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name=".ProfessorGrupos" />
+        <activity
+            android:name=".RenomearGrupo"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".AutorizarGrupo"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".GrupoMembros"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name=".Grafico" />
+        <activity
+            android:name=".GraficoOpcoes"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name=".GraficoRegressao"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name=".ExibeExperimentos" />
+        <activity android:name=".MapeamentoFisico" />
+        <activity android:name=".MapeamentoDimensao" />
+        <activity android:name=".MapeamentoLista" />
+    </application>
+
+</manifest>

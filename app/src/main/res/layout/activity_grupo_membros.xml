@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ufmg_leic.meca.GrupoMembros">
+
+    <TextView
+        android:id="@+id/textViewMembros"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:layout_width="263dp"
+        android:layout_height="46dp"
+        android:text="Membros"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.509" />
+
+    <Button
+        android:id="@+id/buttonMembrosAdd"
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        android:text="Adicionar"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/listView"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewMembros" />
+
+    <Button
+        android:id="@+id/buttonMembrosRemover"
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        android:text="Remover"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/listView"
+        android:layout_marginRight="13dp"
+        app:layout_constraintRight_toRightOf="@+id/textViewMembros" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="207dp"
+        android:layout_height="209dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMembros"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMembrosAdd"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonMembrosAdd" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ufmg_leic.meca.MapeamentoLista">
+
+    <TextView
+        android:id="@+id/textViewMapListTitulo"
+        android:layout_width="244dp"
+        android:layout_height="53dp"
+        android:text="Salas Cadastradas"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="39dp" />
+
+    <ListView
+        android:layout_width="248dp"
+        android:layout_height="175dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMapUnidade"
+        android:id="@+id/listViewMapLista" />
+
+    <Spinner
+        android:id="@+id/spinnerMapInst"
+        android:layout_width="290dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <Spinner
+        android:id="@+id/spinnerMapUnidade"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instituicao"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMapListTitulo"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.125" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidade"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMapInst"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.125" />
+
+    <Button
+        android:id="@+id/buttonMapDeletar"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:text="Deletar"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerMapUnidade"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/listViewMapLista" />
+
+    <Button
+        android:id="@+id/buttonMapAdd"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:text="Nova Sala"
+        android:layout_marginRight="1dp"
+        app:layout_constraintRight_toRightOf="@+id/spinnerMapUnidade"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/listViewMapLista" />
+</android.support.constraint.ConstraintLayout>
